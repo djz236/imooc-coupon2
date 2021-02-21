@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/coupon2-eureka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon2-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/imooc-coupon2-service/coupon2-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/imooc-coupon2-service/coupon2-distribution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/imooc-coupon2-service/coupon2-settlement/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/imooc-coupon2-service/coupon2-template/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
