@@ -1,0 +1,26 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: coupon-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http//server1:8000/eureka/
+zuul:
+  prefix: /imooc
+  routes:
+    template:
+      path: /coupon-template/**
+      serviceId: eureka-client-coupon-template
+      #是否跳过前缀
+      strip-prefix: false
+  host:
+    connect-timeout-millis: 15000
+    socket-timeout-millis: 60000
+#负载均衡的配置
+#Spring Cloud Ribbon是一个基于HTTP和TCP的客户端负载均衡工具，
+#它基于Netflix Ribbon实现。通过Spring Cloud的封装，可以让我们轻松地将面向服务的REST模版请求自动转换成客户端负载均衡的服务调用。
+ribbon:
+  ConnectTimeout: 15000
+  ReadTimeout: 15000
