@@ -18,6 +18,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="coupon2-common" options="-parameters" />
+      <module name="coupon2-eureka" options="-parameters" />
       <module name="coupon2-gateway" options="-parameters" />
     </option>
   </component>
