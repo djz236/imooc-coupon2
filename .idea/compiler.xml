@@ -21,6 +21,7 @@
       <module name="coupon2-common" options="-parameters" />
       <module name="coupon2-eureka" options="-parameters" />
       <module name="coupon2-gateway" options="-parameters" />
+      <module name="coupon2-template" options="-parameters" />
     </option>
   </component>
 </project>
