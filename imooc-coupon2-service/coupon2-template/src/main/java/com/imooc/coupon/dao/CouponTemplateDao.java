@@ -21,8 +21,8 @@ public interface CouponTemplateDao
     /**
      * 根据 Avalable和Expired 标记查找模板记录
      *
-     * @param avaliable
-     * @param expired
+     * @param avaliable 是否是可用状态
+     * @param expired 是否过期
      * @return
      */
     List<CouponTemplate> findAllByAvailableAndExpired(Boolean avaliable,

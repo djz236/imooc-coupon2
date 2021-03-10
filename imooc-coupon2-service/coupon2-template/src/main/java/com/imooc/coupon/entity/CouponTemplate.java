@@ -35,7 +35,7 @@ public class CouponTemplate implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private String id;
+    private Integer id;
     /**
      * 是否是可用状态
      */

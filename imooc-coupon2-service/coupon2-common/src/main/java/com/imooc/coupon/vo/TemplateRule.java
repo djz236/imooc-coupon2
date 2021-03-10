@@ -72,6 +72,9 @@ return expiration.validate()
     /**
      * 折扣，需要与类型配合决定
      */
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
     public static class Discount {
         /**
          * 额度：满减（20），折扣（85），立减（10）
@@ -90,6 +93,9 @@ return expiration.validate()
     /**
      * 使用范围
      */
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
     public static class Usage {
         /**
          * 省份

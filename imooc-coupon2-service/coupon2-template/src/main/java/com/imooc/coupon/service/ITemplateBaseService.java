@@ -18,13 +18,13 @@ public interface ITemplateBaseService {
      * @return CouponTemplate 优化券模板实体
      * @throws CouponException
      */
-    CouponTemplate buildTemplate(Integer id)throws CouponException;
+    CouponTemplate buildTemplateInfo(Integer id)throws CouponException;
 
     /**
      * 查找所有可用的优惠券模板
      * @return
      */
-    List<CouponTemplate> findAllUsableTemplate();
+    List<CouponTemplateSDK> findAllUsableTemplate();
 
     /**
      * 获取模板ids到CouponTemplateSdk的映射
