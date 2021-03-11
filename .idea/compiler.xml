@@ -11,14 +11,19 @@
         <module name="coupon2-common" />
         <module name="coupon2-distribution" />
         <module name="coupon2-template" />
-        <module name="coupon2-eureka" />
         <module name="coupon2-settlement" />
+        <module name="coupon2-eureka" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="coupon2-distribution2" target="8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="coupon2-common" options="-parameters" />
+      <module name="coupon2-distribution" options="-parameters" />
+      <module name="coupon2-distribution2" options="-parameters" />
       <module name="coupon2-eureka" options="-parameters" />
       <module name="coupon2-gateway" options="-parameters" />
       <module name="coupon2-template" options="-parameters" />

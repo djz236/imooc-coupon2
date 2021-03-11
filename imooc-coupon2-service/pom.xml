@@ -14,9 +14,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>coupon2-common</module>
+        <module>coupon2-template</module>
         <module>coupon2-distribution</module>
         <module>coupon2-settlement</module>
-        <module>coupon2-template</module>
     </modules>
-
 </project>
