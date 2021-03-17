@@ -8,11 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="coupon2-gateway" />
+        <module name="coupon2-permission-service" />
+        <module name="coupon2-permission-sdk" />
+        <module name="coupon2-settlement" />
         <module name="coupon2-common" />
         <module name="coupon2-distribution" />
         <module name="coupon2-template" />
-        <module name="coupon2-settlement" />
         <module name="coupon2-eureka" />
+        <module name="coupon2-permission-detector" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,6 +29,9 @@
       <module name="coupon2-distribution2" options="-parameters" />
       <module name="coupon2-eureka" options="-parameters" />
       <module name="coupon2-gateway" options="-parameters" />
+      <module name="coupon2-permission-detector" options="-parameters" />
+      <module name="coupon2-permission-sdk" options="-parameters" />
+      <module name="coupon2-permission-service" options="-parameters" />
       <module name="coupon2-template" options="-parameters" />
     </option>
   </component>
