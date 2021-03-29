@@ -28,6 +28,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+//是用于监听实体类添加或者删除操作的
 @EntityListeners(AuditingEntityListener.class)
 @Table(name = "coupon_template")
 @JsonSerialize(using = CouponTemplateSerialize.class)

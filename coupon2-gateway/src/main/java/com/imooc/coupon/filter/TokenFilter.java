@@ -21,11 +21,11 @@ public class TokenFilter extends AbstractPreZuulFilter{
                 request.getMethod(),
                 request.getRequestURL().toString()));
         Object token=request.getParameter("token");
-        if(null==token){
+        /*if(null==token){
             log.error("error:token is empty");
             //401 用户没有权限访问
             return fail(401,"error:token is empty");
-        }
+        }*/
         //TODO
         return null;
     }

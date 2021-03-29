@@ -20,6 +20,6 @@ public interface PermissionClient {
     CommonReponse<List<Integer>> createPath(
             @RequestBody CreatePathRequest request);
 
-    @RequestMapping(value = "", method = RequestMethod.POST)
+    @RequestMapping(value = "/coupon-permission/check/permission", method = RequestMethod.POST)
     Boolean checkPermission(@RequestBody CheckPermissionRequest request);
 }

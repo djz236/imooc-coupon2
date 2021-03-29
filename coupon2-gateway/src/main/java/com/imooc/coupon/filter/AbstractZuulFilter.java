@@ -46,7 +46,7 @@ public abstract class AbstractZuulFilter extends ZuulFilter {
      */
     @Override
     public Object run() throws ZuulException {
-        RequestContext context = RequestContext.getCurrentContext();
+        context = RequestContext.getCurrentContext();
         return cRun();
     }
 

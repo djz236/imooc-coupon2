@@ -75,7 +75,7 @@ public class RedisServiceImpl implements IRedisService {
 
     @Override
     public String tryToAcquireCouponCodeFromCache(Integer templateId) {
-        String redisKey = String.format("%s%s", Constant.RedisPrefix.COUPON_TEMPLATE);
+        String redisKey = String.format("%s%s", Constant.RedisPrefix.COUPON_TEMPLATE, templateId.toString());
         // 因为优惠卷码不存在顺序关系，左边pop或右边pop,没有影响
         String couponCode = redisTemplate.opsForList().leftPop(redisKey);
         log.info("Acquire Coupon code:{},{},{}", templateId, redisKey, couponCode);
@@ -278,15 +278,15 @@ public class RedisServiceImpl implements IRedisService {
         CouponStatus couponStatus = CouponStatus.of(status);
         switch (couponStatus) {
             case USABLE:
-                redisKey = String.format("s%s%",
+                redisKey = String.format("%s%s",
                         Constant.RedisPrefix.USER_COUPON_USABLE, userId);
                 break;
             case USED:
-                redisKey = String.format("s%s%",
+                redisKey = String.format("%s%s",
                         Constant.RedisPrefix.USER_COUPON_USED, userId);
                 break;
             case EXPIRED:
-                redisKey = String.format("s%s%",
+                redisKey = String.format("%s%s",
                         Constant.RedisPrefix.USER_COUPON_EXPIRED, userId);
                 break;
         }

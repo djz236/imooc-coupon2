@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--引入 JQ 和 Bootstrap-->
+    <script src="/coupon-template/js/jquery-3.4.1/jquery.min.js"></script>
+    <link href="/coupon-template/css/bootstrap-3.3.7/bootstrap.min.css" rel="stylesheet">
+    <script src="/coupon-template/js/bootstrap-3.3.7/bootstrap.min.js"></script>
+    <link rel="icon" th:href="@{/images/favicon.ico}" type="image/x-icon"/>
+
+    <style>
+        .center{
+            text-align: center;
+        }
+        table,td,th{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="center">优惠卷模板</h2>
+    <div class="center"><a class="btn btn-primary" href="/coupon-template/template/thy/list" role="button">优惠卷模板</a></div>
+    <h2 class="center">用户优惠卷</h2>
+    <div class="center"><a class="btn btn-primary" href="http://localhost:7002/coupon-distribution/distribution/thy/users" role="button">用户优惠卷</a></div>
+    <!-- 引入尾部 -->
+    <script language="javascript" type="text/javascript" src="/coupon-template/js/footer.js"></script>
+</body>
+</html>

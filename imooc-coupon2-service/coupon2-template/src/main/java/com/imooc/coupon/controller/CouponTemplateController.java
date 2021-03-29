@@ -63,7 +63,8 @@ public class CouponTemplateController {
 
     /**
      * 查找所有可用的优惠券模板
-     *
+     * 127.0.0.1:7001/coupon-template/template/sdk/all
+     * 127.0.0.1:9000/imooc/coupon-template/template/sdk/all
      * @return
      */
     @GetMapping("/template/sdk/all")
@@ -72,11 +73,15 @@ public class CouponTemplateController {
         return templateBaseService.findAllUsableTemplate();
     }
 
+
     /**
-     * 获取模板 ids 到 couponTemplateSDK 的映射
-     *
+     * <h2>获取模板 ids 到 CouponTemplateSDK 的映射</h2>
+     * 127.0.0.1:7001/coupon-template/template/sdk/infos
+     * 127.0.0.1:9000/imooc/coupon-template/template/sdk/infos
+     * @param ids
      * @return
      */
+    @GetMapping("/template/sdk/infos")
     public Map<Integer, CouponTemplateSDK> findIds2TemplateSDK(
             @RequestParam("ids") Collection<Integer> ids
     ) {

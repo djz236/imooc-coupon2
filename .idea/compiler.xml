@@ -32,6 +32,7 @@
       <module name="coupon2-permission-detector" options="-parameters" />
       <module name="coupon2-permission-sdk" options="-parameters" />
       <module name="coupon2-permission-service" options="-parameters" />
+      <module name="coupon2-settlement" options="-parameters" />
       <module name="coupon2-template" options="-parameters" />
     </option>
   </component>

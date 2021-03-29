@@ -17,7 +17,7 @@ public interface CouponDao extends JpaRepository<Coupon, Integer> {
      * @param status
      * @return
      */
-    List<Coupon> findallByUserIdAndStatus(Long userId, CouponStatus status);
+    List<Coupon> findAllByUserIdAndStatus(Long userId, CouponStatus status);
     /**
      * <h2>通过用户id 查找优惠卷记录</h2>
      * @param userId
